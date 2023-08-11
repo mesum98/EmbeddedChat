@@ -1,7 +1,5 @@
 <html>
-	<head><meta http-equiv=“Permissions-Policy” content=“interest-cohort=()“></head>
-	<body>
-		<style type='text/css'>
+	<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Arial", sans-serif;
@@ -36,17 +34,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://smithnephew--sit.sandbox.my.salesforce.com',
-			'https://smithnephew--sit.sandbox.my.site.com/surveyvforcesite',
+			'https://smithnephew--madev.sandbox.my.salesforce.com',
+			'https://smithnephew--madev.sandbox.my.site.com/portal',
 			gslbBaseURL,
-			'00DS0000003nry2',
-			'Chat_Group',
+			'00D7A000000BpRy',
+			'websitechat',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-ia2.salesforceliveagent.com/content',
-				deploymentId: '572S00000004Eps',
-				buttonId: '573S00000004FCX',
-				baseLiveAgentURL: 'https://d.la1-c1cs-ia2.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Group',
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-ph2.salesforceliveagent.com/content',
+				deploymentId: '5727A000000CcWU',
+				buttonId: '5737A000000CdMn',
+				baseLiveAgentURL: 'https://d.la2-c1cs-ph2.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'websitechat',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -54,7 +52,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://smithnephew--sit.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://smithnephew--madev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -62,6 +60,5 @@
 	} else {
 		initESW('https://service.force.com');
 	}
-		</script>
-	</body>
+</script>
 </html>

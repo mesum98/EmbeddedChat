@@ -1,7 +1,5 @@
 <html>
-	<head><meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()" /></head>
-	<body>
-		<style type='text/css'>
+	<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Arial", sans-serif;
@@ -12,7 +10,7 @@
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<!-- <script type='text/javascript'>
+<script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
@@ -40,24 +38,18 @@
 			'https://smithnephew--sit.sandbox.my.site.com/surveyvforcesite',
 			gslbBaseURL,
 			'00DS0000003nry2',
-			'Chat_Group',
+			'Live_Chat_Testers',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-ia2.salesforceliveagent.com/content',
 				deploymentId: '572S00000004Eps',
-				buttonId: '573S00000004FCX',
+				buttonId: '573S00000004FCS',
 				baseLiveAgentURL: 'https://d.la1-c1cs-ia2.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Group',
+				eswLiveAgentDevName: 'Live_Chat_Testers',
 				isOfflineSupportEnabled: true
 			}
 		);
-	}; -->
-<script><a id="liveagent_button_online_573S00000004FCX" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573S00000004FCX')"><!-- Online Chat Content --></a><div id="liveagent_button_offline_573S00000004FCX" style="display: none;"><!-- Offline Chat Content --></div><script type="text/javascript">
-if (!window._laq) { window._laq = []; }
-window._laq.push(function(){liveagent.showWhenOnline('573S00000004FCX', document.getElementById('liveagent_button_online_573S00000004FCX'));
-liveagent.showWhenOffline('573S00000004FCX', document.getElementById('liveagent_button_offline_573S00000004FCX'));
-});</script>
+	};
 
-<script>
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://smithnephew--sit.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
@@ -68,6 +60,5 @@ liveagent.showWhenOffline('573S00000004FCX', document.getElementById('liveagent_
 	} else {
 		initESW('https://service.force.com');
 	}
-		</script>
-	</body>
+</script>
 </html>
